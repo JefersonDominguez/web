@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Ruleta</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Juego de Ruleta</h1>
+    <form id="form">
+        <label for="name">Ingrese un nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Escribe un nombre aquí...">
+        <button id="add-name">Agregar nombre</button>
+        <button id="spin" type="button">Girar la ruleta</button>
+    </form>
+    <div id="container">
+        <div id="wheel-container">
+            <div class="arrow"></div>
+            <div id="wheel">
+                <!-- Nombres se agregarán aquí -->
+            </div>
+        </div>
+        <div id="names-out">
+            <h3>Nombres Salidos:</h3>
+            <ul id="names-list"></ul>
+        </div>
+    </div>
+    <div id="results"></div>
+
+    <!-- Enlace al archivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
+
